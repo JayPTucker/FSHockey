@@ -23,12 +23,11 @@ function App() {
           test
         </Col>
 
-        <Avatar1 /> {/* Render Avatar1 within App */}
+        {/* Render Avatar1 within App */}
+        <Avatar1 /> 
 
-        {/* <Avatar2 /> Render Avatar1 within App */}
-        <Col md={2} className='section4'>
-          test
-        </Col>
+        {/* Render Avatar1 within App */}
+        <Avatar2 />
 
       </Row>
     </Container>

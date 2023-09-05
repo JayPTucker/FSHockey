@@ -51,7 +51,7 @@ class YourComponent extends Component {
           className="AvatarVid1"
           alt="Avatar 1 Vid"
           controls={false} // Disable the controls
-          disablepictureinpicture // Disable the PiP button
+          disablePictureInPicture // Disable the PiP button
         >
           <source src={AvatarVid1WebM} type="video/webm" />
           {/* Add additional source elements for different video formats if needed */}
