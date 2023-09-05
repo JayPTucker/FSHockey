@@ -5,7 +5,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 
 
 
-import YourComponent from './Component.js'; // Import YourComponent
+import YourComponent from './Avatar1.js'; // Import YourComponent
 
 function App() {
   return (

@@ -49,7 +49,6 @@ class YourComponent extends Component {
           muted
           className="AvatarVid1"
           alt="Avatar 1 Vid"
-          poster="test.png"
         >
           <source src={AvatarVid1WebM} type="video/webm" />
           {/* Add additional source elements for different video formats if needed */}
