@@ -1,6 +1,8 @@
 import './Home.css';
 import { Row, Col, Container} from 'react-bootstrap';
 
+import AvatarVid1WebM from './img/4444trans_avi_1.webm';
+
 function App() {
   return (
     <Container fluid>
@@ -19,7 +21,13 @@ function App() {
         </Col>
 
         <Col md={2} className='section4'>
-        test
+        
+       <video autoPlay loop muted className="AvatarVid1" alt="Avatar 1 Vid" poster="path_to_poster_image.jpg">
+        <source src={AvatarVid1WebM} type="video/webm" />
+        {/* Add additional source elements for different video formats if needed */}
+      </video>
+
+
         </Col>
 
       </Row>

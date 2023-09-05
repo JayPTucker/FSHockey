@@ -6,9 +6,10 @@
 }
 
 .section1, .section2, .section3, .section4 {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.6s ease-in-out;
   height: 100vh !important;
-  overflow: hidden; /* Hide any content overflow */
+  /* Gets rid of edges in columns */
+  padding: 0px !important;
 }
 
 .section1 {
@@ -28,10 +29,25 @@
 }
 
 /* Scale the section on hover */
-.section1:hover, .section2:hover, .section3:hover, .section4:hover {
-  transform: scaleX(1.10); /* Adjust the scaling factor as needed */
+.section1:hover, .section2:hover, .section3:hover {
+  transform: scaleX(1.03); /* Adjust the scaling factor as needed */
   transform-origin: left center;
   z-index: 1; /* Bring the hovered section to the front */
   background-color: rgba(128, 0, 128, 0.803);
   box-shadow: 1px 20px 20px black;
+}
+
+.section4:hover {
+  transform: scaleX(1.01); /* Adjust the scaling factor as needed */
+  transform-origin: right center;
+  z-index: 1; /* Bring the hovered section to the front */
+  background-color: rgba(128, 0, 128, 0.803);
+  box-shadow: 1px 20px 20px black;
+}
+
+/* ======================================================= */
+
+.AvatarVid1 {
+  max-width: 100%;
+  justify-content: center;
 }
