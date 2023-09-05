@@ -35,8 +35,39 @@
   box-shadow: 1px 20px 20px black;
 }
 
+/* ========================================================== */
+
+/* YourComponent.css */
+.credits {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex; /* Use flexbox to arrange the elements */
+  align-items: center; /* Vertically center the content */
+  background-color: rgba(0, 0, 0, 0.233);
+  color: white;
+  padding: 5px;
+  border: 1px solid #00000034;
+}
+
+/* Style the logo image */
+.navbar-logo {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add some spacing between the image and text */
+  border-radius: 100px;
+  border: 1px solid #00000079;
+}
+
+/* Style the text */
+.credits p {
+  margin: 0; /* Remove default margin to prevent extra spacing */
+}
+
+
+
 /* ======================================================= */
-/* AVATAR 1 */
+/* SECTION 4 - AVATAR 1 */
 /* ======================================================= */
 
 

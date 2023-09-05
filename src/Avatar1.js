@@ -1,9 +1,9 @@
 // YourComponent.js
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import Avi1Pic from './img/Avatar1/fsh_avi_1_pic.png'
+import Avi1Pic from './img/Section4/fsh_avi_1_pic.png'
 
-import AvatarVid1WebM from './img/Avatar1/4444trans_avi_1.webm';
+import AvatarVid1WebM from './img/Section4/4444trans_avi_1.webm';
 
 class YourComponent extends Component {
   constructor(props) {
