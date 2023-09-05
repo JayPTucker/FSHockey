@@ -1,6 +1,6 @@
 // YourComponent.js
 import React, { Component } from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import Avi1Pic from './img/fsh_avi_1_pic.png'
 
 import AvatarVid1WebM from './img/4444trans_avi_1.webm';
@@ -54,7 +54,7 @@ class YourComponent extends Component {
           {/* Add additional source elements for different video formats if needed */}
         </video>
 
-        <img src={Avi1Pic} className='Avi1Pic'></img>
+        <img src={Avi1Pic} className='Avi1Pic' alt="BarryBoy"></img>
       </Col>
     );
   }
