@@ -7,7 +7,7 @@ function App() {
       <Row className="mainRow">
         
         <Col md={5} className='section1'>
-            test
+            tes
         </Col>
 
         <Col md={3} className='section2'>

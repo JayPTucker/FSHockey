@@ -1,21 +1,37 @@
 .mainRow {
-  height: 100vh;
+  height: 100vh !important;
+  display: flex;
   justify-content: center;
   text-align: center;
 }
 
+.section1, .section2, .section3, .section4 {
+  transition: all 0.5s ease-in-out;
+  height: 100vh !important;
+  overflow: hidden; /* Hide any content overflow */
+}
+
 .section1 {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.502);
 }
 
 .section2 {
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.502);
 }
 
 .section3 {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.501);
 }
 
 .section4 {
-  background-color: yellow;
+  background-color: rgba(255, 255, 0, 0.506);
+}
+
+/* Scale the section on hover */
+.section1:hover, .section2:hover, .section3:hover, .section4:hover {
+  transform: scaleX(1.10); /* Adjust the scaling factor as needed */
+  transform-origin: left center;
+  z-index: 1; /* Bring the hovered section to the front */
+  background-color: rgba(128, 0, 128, 0.803);
+  box-shadow: 1px 20px 20px black;
 }
