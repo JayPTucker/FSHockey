@@ -1,0 +1,21 @@
+.mainRow {
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.section1 {
+  background-color: red;
+}
+
+.section2 {
+  background-color: blue;
+}
+
+.section3 {
+  background-color: green;
+}
+
+.section4 {
+  background-color: yellow;
+}
