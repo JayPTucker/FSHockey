@@ -1,9 +1,9 @@
 // YourComponent.js
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import Avi1Pic from './img/fsh_avi_1_pic.png'
+import Avi1Pic from './img/Avatar1/fsh_avi_1_pic.png'
 
-import AvatarVid1WebM from './img/4444trans_avi_1.webm';
+import AvatarVid1WebM from './img/Avatar1/4444trans_avi_1.webm';
 
 class YourComponent extends Component {
   constructor(props) {
@@ -15,13 +15,13 @@ class YourComponent extends Component {
     // Add event listeners to control video playback
     this.section4 = document.querySelector('.section4'); // Replace with a more specific selector if needed
     this.section4.addEventListener('mouseenter', this.playVideo);
-    this.section4.addEventListener('mouseleave', this.pauseVideo);
+    this.section4.addEventListener('mouseleave', this.resetVideo);
   }
 
   componentWillUnmount() {
     // Remove event listeners when the component unmounts
     this.section4.removeEventListener('mouseenter', this.playVideo);
-    this.section4.removeEventListener('mouseleave', this.pauseVideo);
+    this.section4.removeEventListener('mouseleave', this.resetVideo);
   }
 
   playVideo = () => {
@@ -31,10 +31,11 @@ class YourComponent extends Component {
     }
   };
 
-  pauseVideo = () => {
-    // Pause the video when no longer hovering
+  resetVideo = () => {
+    // Reset the video to 0 seconds when not hovering.  Also pauses it.
     if (this.videoRef.current) {
       this.videoRef.current.pause();
+      this.videoRef.current.currentTime = 0;
     }
   };
 

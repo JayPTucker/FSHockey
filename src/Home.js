@@ -5,7 +5,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 
 
 
-import YourComponent from './Avatar1.js'; // Import YourComponent
+import Avatar1 from './Avatar1.js'; // Import Avatar1
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         </Col>
 
 
-        <YourComponent /> {/* Render YourComponent within App */}
+        <Avatar1 /> {/* Render Avatar1 within App */}
 
       </Row>
     </Container>

@@ -7,7 +7,7 @@
 
 .section1, .section2, .section3, .section4 {
   transition: all 0.6s ease-in-out;
-  height: 100vh !important;
+  height: 100vh;
   /* Gets rid of edges in columns */
   padding: 0px !important;
   box-shadow: 1px 1px 5px black;
@@ -16,6 +16,7 @@
 .section1 {
   background-color: rgba(255, 0, 0, 0.502);
 }
+/* YourComponent.css */
 
 .section2 {
   background-color: rgba(0, 0, 255, 0.502);
@@ -23,10 +24,6 @@
 
 .section3 {
   background-color: rgba(0, 128, 0, 0.501);
-}
-
-.section4 {
-  background-color: rgba(107, 6, 6, 0.644);
 }
 
 /* Scale the section on hover */
@@ -38,15 +35,10 @@
   box-shadow: 1px 20px 20px black;
 }
 
-.section4:hover {
-  transform: scaleX(1.01); /* Adjust the scaling factor as needed */
-  transform-origin: right center;
-  z-index: 1; /* Bring the hovered section to the front */
-  background-color: rgba(230, 226, 6, 0.534);
-  box-shadow: 1px 20px 20px black;
-}
-
 /* ======================================================= */
+/* AVATAR 1 */
+/* ======================================================= */
+
 
 /* Style the container for section4 */
 .section4 {
@@ -56,6 +48,32 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(to bottom, rgb(139, 0, 0), black); /* Create a vertical gradient from red to black */
+}
+
+/* Create a pseudo-element for the gradient background */
+.section4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #abab3d, #3458ad); /* Create a vertical gradient from red to black */
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 1s ease-in-out; /* Transition the opacity property */
+}
+
+.section4:hover::before {
+  opacity: 1; /* Set opacity to 1 on hover */
+}
+
+.section4:hover {
+  transform: scaleX(1.01); /* Adjust the scaling factor as needed */
+  transform-origin: right center;
+  z-index: 1; /* Bring the hovered section to the front */
+  background-color: rgba(230, 226, 6, 0.534);
+  box-shadow: 1px 20px 20px black;
 }
 
 /* Style the video */
@@ -64,7 +82,7 @@
   max-height: 100%;
   object-fit: cover;
   filter: grayscale(100%);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.6s ease-in-out;
   opacity: 50%;
   position: absolute;
   top: 0;
@@ -98,6 +116,7 @@
   transform: scale(1.5);
 }
 
+/* When section 4 is hovered over, do this to Avi1Pic: */
 .section4:hover .Avi1Pic {
   opacity: 20%;
   z-index: 0;
@@ -107,6 +126,8 @@
 /* Style the title to be at the top */
 .avatarTitle {
   font-size: 50px;
-  margin-top: 20px; /* Adjust the margin-top as needed */
+  margin-top: 5vh; /* Adjust the margin-top as needed */
   font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 10px black;
 }
