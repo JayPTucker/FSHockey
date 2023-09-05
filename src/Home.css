@@ -6,10 +6,10 @@
 }
 
 .section1, .section2, .section3, .section4 {
-  transition: all 0.6s ease-in-out;
-  height: 100vh;
   /* Gets rid of edges in columns */
   padding: 0px !important;
+  transition: all 0.6s ease-in-out;
+  height: 100vh;
   box-shadow: 1px 1px 5px black;
 }
 
@@ -173,9 +173,9 @@
 
 /* When section 4 is hovered over, do this to Avi1Pic: */
 .section3:hover .Avi1Pic {
-  opacity: 20%;
+  opacity: 8%;
   z-index: 0;
-  transform: scale(1);
+  transform: scale(4);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -259,7 +259,7 @@
   transform: scale(3.4);
 }
 
-.section4:hover .AvatarVid1 {
+.section4:hover .AvatarVid2 {
   opacity: 100%;
   filter: grayscale(0%);
   transform: scale(3.7);

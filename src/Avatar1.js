@@ -1,7 +1,7 @@
 // YourComponent.js
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import Avi1Pic from './img/Section3/fsh_avi_1_pic.png'
+import Avi1Pic from './img/Section3/FSH_avi_1.png';
 
 import AvatarVid1WebM from './img/Section3/4444trans_avi_1.webm';
 
