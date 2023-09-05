@@ -1,9 +1,9 @@
 // YourComponent.js
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import Avi1Pic from './img/Section4/fsh_avi_1_pic.png'
+import Avi1Pic from './img/Section3/fsh_avi_1_pic.png'
 
-import AvatarVid1WebM from './img/Section4/4444trans_avi_1.webm';
+import AvatarVid1WebM from './img/Section3/4444trans_avi_1.webm';
 
 class YourComponent extends Component {
   constructor(props) {
@@ -13,15 +13,15 @@ class YourComponent extends Component {
 
   componentDidMount() {
     // Add event listeners to control video playback
-    this.section4 = document.querySelector('.section4'); // Replace with a more specific selector if needed
-    this.section4.addEventListener('mouseenter', this.playVideo);
-    this.section4.addEventListener('mouseleave', this.resetVideo);
+    this.section3 = document.querySelector('.section3'); // Replace with a more specific selector if needed
+    this.section3.addEventListener('mouseenter', this.playVideo);
+    this.section3.addEventListener('mouseleave', this.resetVideo);
   }
 
   componentWillUnmount() {
     // Remove event listeners when the component unmounts
-    this.section4.removeEventListener('mouseenter', this.playVideo);
-    this.section4.removeEventListener('mouseleave', this.resetVideo);
+    this.section3.removeEventListener('mouseenter', this.playVideo);
+    this.section3.removeEventListener('mouseleave', this.resetVideo);
   }
 
   playVideo = () => {
@@ -41,7 +41,7 @@ class YourComponent extends Component {
 
   render() {
     return (
-      <Col md={2} className='section4'>
+      <Col md={2} className='section3'>
 
         <p className='avatarTitle'>BarryBoy</p>
         <video

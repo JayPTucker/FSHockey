@@ -22,7 +22,7 @@
   background-color: rgba(0, 0, 255, 0.502);
 }
 
-.section3 {
+.section4 {
   background-color: rgba(0, 128, 0, 0.501);
 }
 
@@ -72,7 +72,7 @@
 
 
 /* Style the container for section4 */
-.section4 {
+.section3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +83,7 @@
 }
 
 /* Create a pseudo-element for the gradient background */
-.section4::before {
+.section3::before {
   content: "";
   position: absolute;
   top: 0;
@@ -95,11 +95,11 @@
   transition: opacity 1s ease-in-out; /* Transition the opacity property */
 }
 
-.section4:hover::before {
+.section3:hover::before {
   opacity: 1; /* Set opacity to 1 on hover */
 }
 
-.section4:hover {
+.section3:hover {
   transform: scaleX(1.01); /* Adjust the scaling factor as needed */
   transform-origin: right center;
   z-index: 1; /* Bring the hovered section to the front */
@@ -125,7 +125,7 @@
   transform: scale(3.4);
 }
 
-.section4:hover .AvatarVid1 {
+.section3:hover .AvatarVid1 {
   opacity: 100%;
   filter: grayscale(0%);
   transform: scale(3.7);
@@ -148,7 +148,7 @@
 }
 
 /* When section 4 is hovered over, do this to Avi1Pic: */
-.section4:hover .Avi1Pic {
+.section3:hover .Avi1Pic {
   opacity: 20%;
   z-index: 0;
   transform: scale(1);

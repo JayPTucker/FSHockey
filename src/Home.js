@@ -7,6 +7,7 @@ import favicon from "./img/Section1/favicon.ico"
 
 
 import Avatar1 from './Avatar1.js'; // Import Avatar1
+import Avatar2 from './Avatar2.js';
 
 function App() {
   return (
@@ -21,12 +22,13 @@ function App() {
         <Col md={3} className='section2'>
           test
         </Col>
-        <Col md={2} className='section3'>
-          test
-        </Col>
-
 
         <Avatar1 /> {/* Render Avatar1 within App */}
+
+        {/* <Avatar2 /> Render Avatar1 within App */}
+        <Col md={2} className='section4'>
+          test
+        </Col>
 
       </Row>
     </Container>
