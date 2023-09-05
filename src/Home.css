@@ -47,7 +47,22 @@
 
 /* ======================================================= */
 
-.AvatarVid1 {
-  max-width: 100%;
-  justify-content: center;
+.avatarTitle {
+  font-size: 20px;
+  margin-bottom: 200px;
 }
+
+.AvatarVid1 {
+  width: 100%; /* Make the video fill the entire container width */
+  height: 50vh; /* Make the video fill the entire container height */
+  object-fit: cover; /* Crop the video to cover the container */
+  filter: grayscale(100%);
+  transition: all 0.4s ease-in-out;
+  opacity: 75%;
+}
+
+.AvatarVid1:hover {
+  filter: grayscale(0%);
+  opacity: 100%;
+}
+
