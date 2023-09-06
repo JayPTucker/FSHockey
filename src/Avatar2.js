@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
 import Avi2Pic from './img/Section4/Avatar2Pic.png'; // Update the image path
-import AvatarVid2WebM from './img/Section4/Avatar2Vid.webm'; // Update the video path
+import AvatarVid2WebM from './img/Section4/Avatar2-60.webm'; // Update the video path
 
 class YourComponent2 extends Component {
   constructor(props) {
