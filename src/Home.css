@@ -8,26 +8,26 @@
 .section1, .section2, .section3, .section4 {
   /* Gets rid of edges in columns */
   padding: 0px !important;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   height: 100vh;
   box-shadow: 1px 1px 5px black;
 }
 
 .section1 {
-  background-color: rgba(255, 0, 0, 0.502);
+  background-color: rgb(66, 0, 0);
 }
 /* YourComponent.css */
 
 .section2 {
-  background-color: rgba(0, 0, 255, 0.502);
+  background-color: rgba(139, 0, 0, 0.76);
 }
 
 /* Scale the section on hover */
-.section1:hover, .section2:hover, .section3:hover {
+.section1:hover, .section2:hover, .section3:hover, .section4:hover {
   transform: scaleX(1); /* Adjust the scaling factor as needed */
   transform-origin: center;
   z-index: 1; /* Bring the hovered section to the front */
-  box-shadow: 1px 20px 20px black;
+  border: 1px solid rgba(255, 255, 255, 0.637);
 }
 
 /* ========================================================== */
@@ -124,13 +124,6 @@
 
 .section3:hover::before, .section4:hover::before {
   opacity: 1; /* Set opacity to 1 on hover */
-}
-
-.section3:hover, .section4:hover {
-  transform: scaleX(1.01); /* Adjust the scaling factor as needed */
-  transform-origin: right center;
-  z-index: 1; /* Bring the hovered section to the front */
-  box-shadow: 1px 20px 20px black;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
