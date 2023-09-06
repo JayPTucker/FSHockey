@@ -40,7 +40,7 @@ class YourComponent2 extends Component {
   render() {
     return (
       <Col md={2} className='section4'> {/* Update the class name to target .section4 */}
-        <p className='avatarTitle'>FILLER</p>
+        <p className='avatarTitle'>Plaguey</p>
         <video
           ref={this.videoRef}
           loop

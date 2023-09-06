@@ -8,7 +8,7 @@
 .section1, .section2, .section3, .section4 {
   /* Gets rid of edges in columns */
   padding: 0px !important;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
   height: 100vh;
   box-shadow: 1px 1px 5px black;
 }
@@ -22,16 +22,11 @@
   background-color: rgba(0, 0, 255, 0.502);
 }
 
-.section4 {
-  background-color: rgba(0, 128, 0, 0.501);
-}
-
 /* Scale the section on hover */
 .section1:hover, .section2:hover, .section3:hover {
-  transform: scaleX(1.03); /* Adjust the scaling factor as needed */
-  transform-origin: left center;
+  transform: scaleX(1); /* Adjust the scaling factor as needed */
+  transform-origin: center;
   z-index: 1; /* Bring the hovered section to the front */
-  background-color: rgba(128, 0, 128, 0.803);
   box-shadow: 1px 20px 20px black;
 }
 
@@ -66,49 +61,14 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+
+
 /* ======================================================= */
-/* SECTION 3 - AVATAR 1 */
+/* SECTION 3/4 - AVATAR 1/2 */
 /* ======================================================= */
-
-/* Style the container for section4 */
-.section3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(to bottom, #2b3fbd, black); /* Create a vertical gradient from red to black */
-}
-
-/* Create a pseudo-element for the gradient background */
-.section3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, #2b3fbd, #ffe5db); /* Create a vertical gradient from red to black */
-  opacity: 0; /* Initially set opacity to 0 */
-  transition: opacity 1s ease-in-out; /* Transition the opacity property */
-}
-
-.section3:hover::before {
-  opacity: 1; /* Set opacity to 1 on hover */
-}
-
-.section3:hover {
-  transform: scaleX(1.01); /* Adjust the scaling factor as needed */
-  transform-origin: right center;
-  z-index: 1; /* Bring the hovered section to the front */
-  background-color: rgba(230, 226, 6, 0.534);
-  box-shadow: 1px 20px 20px black;
-}
-
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* AVATAR TITLE */
+/* AVATAR TITLES */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Style the title to be at the top */
@@ -116,19 +76,69 @@
   font-size: 50px;
   margin-top: 5vh; /* Adjust the margin-top as needed */
   font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px 10px black;
+  color: rgba(255, 255, 255, 0.856);
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.918);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* COL SECTIONS */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Style the container for section4 */
+.section3 {
+  background: linear-gradient(to bottom, #2b3fbd, black); /* Create a vertical gradient from red to black */
+}
+
+.section3::before {
+  background: linear-gradient(to bottom, #2b3fbd, #ffe5db); /* Create a vertical gradient from red to black */
+}
+
+.section4 {
+  background: linear-gradient(to bottom, #f7a97a, black); /* Create a vertical gradient from red to black */
+}
+
+.section4::before {
+  background: linear-gradient(to bottom, #f7a97a, #5e5c65); /* Create a vertical gradient from red to black */
+}
+
+.section3, .section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Create a pseudo-element for the gradient background */
+.section3::before, .section4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 0.5s ease-in-out; /* Transition the opacity property */
+}
+
+.section3:hover::before, .section4:hover::before {
+  opacity: 1; /* Set opacity to 1 on hover */
+}
+
+.section3:hover, .section4:hover {
+  transform: scaleX(1.01); /* Adjust the scaling factor as needed */
+  transform-origin: right center;
+  z-index: 1; /* Bring the hovered section to the front */
+  box-shadow: 1px 20px 20px black;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* AVATAR VIDEO */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Style the video */
-.AvatarVid1 {
+.AvatarVid1, .AvatarVid2 {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -145,7 +155,7 @@
   transform: scale(3.4);
 }
 
-.section3:hover .AvatarVid1 {
+.section3:hover .AvatarVid1, .section4:hover .AvatarVid2 {
   opacity: 100%;
   filter: grayscale(0%);
   transform: scale(3.9);
@@ -157,11 +167,11 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Style the image */
-.Avi1Pic {
+.Avi1Pic, .Avi2Pic {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: 1;
   position: absolute;
   bottom: 0; /* Position the image at the bottom */
@@ -169,130 +179,20 @@
   right: 100px;
   margin: auto;
   filter: grayscale(0%);
-  transform: scale(1.7);
+}
+
+.Avi1Pic {
+  transform: scale(1.2);
+}
+
+.Avi2Pic {
+  transform: scale(1.5);
 }
 
 /* When section 4 is hovered over, do this to Avi1Pic: */
-.section3:hover .Avi1Pic {
+.section3:hover .Avi1Pic, .section4:hover .Avi2Pic {
   opacity: 30%;
   z-index: 0;
   transform: scale(4);
   filter: grayscale(100%);
 }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* ========================= */
-/* SECTION 4 - AVATAR 2 */
-/* ========================= */
-
-/* Style the container for section4 */
-.section4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(to bottom, rgb(138, 1, 202), black); /* Create a vertical gradient from red to black */
-}
-
-/* Create a pseudo-element for the gradient background */
-.section4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, #abab3d, #3458ad); /* Create a vertical gradient from red to black */
-  opacity: 0; /* Initially set opacity to 0 */
-  transition: opacity 1s ease-in-out; /* Transition the opacity property */
-}
-
-.section4:hover::before {
-  opacity: 1; /* Set opacity to 1 on hover */
-}
-
-.section4:hover {
-  transform: scaleX(1.01); /* Adjust the scaling factor as needed */
-  transform-origin: right center;
-  z-index: 1; /* Bring the hovered section to the front */
-  background-color: rgba(230, 226, 6, 0.534);
-  box-shadow: 1px 20px 20px black;
-}
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* AVATAR TITLE */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* Style the title to be at the top */
-.avatarTitle {
-  font-size: 50px;
-  margin-top: 5vh; /* Adjust the margin-top as needed */
-  font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px 10px black;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* AVATAR VIDEO */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* Style the video */
-.AvatarVid2 {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-  filter: grayscale(100%);
-  transition: all 0.6s ease-in-out;
-  opacity: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: 0;
-  transform: scale(3.4);
-}
-
-.section4:hover .AvatarVid2 {
-  opacity: 100%;
-  filter: grayscale(0%);
-  transform: scale(3.7);
-  z-index: 1;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* AVATAR PICTURE */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* Style the image */
-.Avi2Pic {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  transition: all 0.4s ease-in-out;
-  z-index: 1;
-  position: absolute;
-  bottom: 0; /* Position the image at the bottom */
-  left: 0;
-  right: 100px;
-  margin: auto;
-  transform: scale(1.5);
-}
-
-/* When section 4 is hovered over, do this to Avi1Pic: */
-.section4:hover .Avi2Pic {
-  opacity: 20%;
-  z-index: 0;
-  transform: scale(1);
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
