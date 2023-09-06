@@ -78,7 +78,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to bottom, rgb(139, 0, 0), black); /* Create a vertical gradient from red to black */
+  background: linear-gradient(to bottom, #2b3fbd, black); /* Create a vertical gradient from red to black */
 }
 
 /* Create a pseudo-element for the gradient background */
@@ -89,7 +89,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, #abab3d, #3458ad); /* Create a vertical gradient from red to black */
+  background: linear-gradient(to bottom, #2b3fbd, #ffe5db); /* Create a vertical gradient from red to black */
   opacity: 0; /* Initially set opacity to 0 */
   transition: opacity 1s ease-in-out; /* Transition the opacity property */
 }
@@ -133,7 +133,7 @@
   max-height: 100%;
   object-fit: cover;
   filter: grayscale(100%);
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
   opacity: 50%;
   position: absolute;
   top: 0;
@@ -148,7 +148,7 @@
 .section3:hover .AvatarVid1 {
   opacity: 100%;
   filter: grayscale(0%);
-  transform: scale(3.7);
+  transform: scale(3.9);
   z-index: 1;
 }
 
@@ -168,14 +168,16 @@
   left: 0;
   right: 100px;
   margin: auto;
-  transform: scale(1.5);
+  filter: grayscale(0%);
+  transform: scale(1.7);
 }
 
 /* When section 4 is hovered over, do this to Avi1Pic: */
 .section3:hover .Avi1Pic {
-  opacity: 8%;
+  opacity: 30%;
   z-index: 0;
   transform: scale(4);
+  filter: grayscale(100%);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

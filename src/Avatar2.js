@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import Avi2Pic from './img/Section4/FSH_avi_2.png'; // Update the image path
-import AvatarVid2WebM from './img/Section4/4444trans_avi_2.webm'; // Update the video path
+import Avi2Pic from './img/Section4/Avatar2Pic.png'; // Update the image path
+import AvatarVid2WebM from './img/Section4/Avatar2Vid.webm'; // Update the video path
 
 class YourComponent2 extends Component {
   constructor(props) {
@@ -40,7 +40,7 @@ class YourComponent2 extends Component {
   render() {
     return (
       <Col md={2} className='section4'> {/* Update the class name to target .section4 */}
-        <p className='avatarTitle'>BarryBoy</p>
+        <p className='avatarTitle'>FILLER</p>
         <video
           ref={this.videoRef}
           loop
