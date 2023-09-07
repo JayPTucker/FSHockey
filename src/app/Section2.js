@@ -7,7 +7,7 @@ class YourComponent4 extends Component {
     render() {
         return (
 
-            <Col md={3} className='section2'>
+            <Col md={4} className='section2'>
                 <img className="fslogo" src={fslogo} alt="fslogo"></img>
 
                 <br></br>

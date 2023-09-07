@@ -13,7 +13,11 @@ function App() {
     <Container fluid>
       <Row className="mainRow">
 
-        <Section1 />
+        {/* <Section1 /> */}
+
+        <Avatar1 /> 
+
+        <Avatar2 />
 
         <Section2 />
 
