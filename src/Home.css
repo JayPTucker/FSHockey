@@ -35,7 +35,7 @@
 /* YourComponent.css */
 .credits {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   display: flex; /* Use flexbox to arrange the elements */
   align-items: center; /* Vertically center the content */
