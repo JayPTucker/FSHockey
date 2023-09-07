@@ -15,12 +15,12 @@
 }
 
 .section1 {
-  background-color: rgb(66, 0, 0);
+  background: linear-gradient(to bottom, #8d0000d5, rgba(0, 0, 0, 0.856)); /* Create a vertical gradient from red to black */
 }
-/* YourComponent.css */
+/* YourComponent.css */ 
 
 .section2 {
-  background-color: rgba(139, 0, 0, 0.76);
+  background-color: rgba(0, 0, 0, 0.856);
 }
 
 /* Scale the section on hover */
@@ -41,13 +41,14 @@
   align-items: center; /* Vertically center the content */
   background-color: rgba(0, 0, 0, 0.233);
   color: white;
-  padding: 5px;
+  padding: 2px;
+  font-size: 10px;
   border: 1px solid #00000034;
 }
 
 /* Style the logo image */
 .navbar-logo {
-  width: 40px; /* Adjust the width as needed */
+  width: 30px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-right: 10px; /* Add some spacing between the image and text */
   border-radius: 100px;
@@ -64,6 +65,16 @@
 /* ======================================================= */
 /* SECTION 1 */
 /* ======================================================= */
+
+.pageTitle {
+  font-size: 70px;
+  margin-top: 6vh; /* Adjust the margin-top as needed */
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.856);
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.918);
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+}
 
 /* YourComponent.css */
 
@@ -119,19 +130,19 @@
 
 /* Container Gradients and effects behind them */
 .section3 {
-  background: linear-gradient(to bottom, #2b3fbd, black); /* Create a vertical gradient from red to black */
+  background: linear-gradient(to bottom, #2b3fbddc, rgba(0, 0, 0, 0.856)); /* Create a vertical gradient from red to black */
 }
 
 .section3::before {
-  background: linear-gradient(to bottom, #2b3fbd, #ffe5db); /* Create a vertical gradient from red to black */
+  background: linear-gradient(to bottom, #2b3fbd91, #ffe5db81); /* Create a vertical gradient from red to black */
 }
 
 .section4 {
-  background: linear-gradient(to bottom, #ff741d, black); /* Create a vertical gradient from red to black */
+  background: linear-gradient(to bottom, #ff741dd5, rgba(0, 0, 0, 0.856)); /* Create a vertical gradient from red to black */
 }
 
 .section4::before {
-  background: linear-gradient(to bottom, #ff741d, #ffc39e); /* Create a vertical gradient from red to black */
+  background: linear-gradient(to bottom, #ff741d80, #ffc39e8c); /* Create a vertical gradient from red to black */
 }
 
 .section3, .section4 {
@@ -197,7 +208,7 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   position: absolute;
   z-index: 1;
   bottom: 0; /* Position the image at the bottom */
@@ -217,8 +228,8 @@
 
 /* When section 4 is hovered over, do this to Avi1Pic: */
 .section3:hover .Avi1Pic, .section4:hover .Avi2Pic {
-  opacity: 30%;
+  opacity: 25%;
   z-index: 0 !important;
-  transform: scale(6);
+  transform: scale(2.2);
   filter: grayscale(100%);
 }

@@ -33,7 +33,6 @@ class YourComponent2 extends Component {
     // Reset the video to 0 seconds when not hovering. Also pauses it.
     if (this.videoRef.current) {
       this.videoRef.current.pause();
-      this.videoRef.current.currentTime = 0;
     }
   };
 

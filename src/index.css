@@ -5,4 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./img/backgroundtest.jpg'); /* Replace with the actual path to your image */
+  background-size: cover; /* Scale the image to cover the entire body element */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed;
 }
