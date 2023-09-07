@@ -25,8 +25,6 @@
 
 /* Scale the section on hover */
 .section1:hover, .section2:hover, .section3:hover, .section4:hover {
-  transform: scale(1.1); /* Adjust the scaling factor as needed */
-  transform-origin: center;
   z-index: 2; /* Bring the hovered section to the front */
   border: 1px solid rgba(255, 255, 255, 0.867);
   box-shadow: 0px 0px 60px black;
@@ -63,6 +61,31 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/* ======================================================= */
+/* SECTION 1 */
+/* ======================================================= */
+
+/* YourComponent.css */
+
+.headerPic {
+  max-width: 80%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  position: fixed;
+  bottom: 0; /* Position the image at the bottom */
+  left: 0;
+  right: 0;
+  filter: grayscale(0%);
+}
+
+/* Remove transform property from headerPic */
+
+
+/* ======================================================= */
+/* SECTION 2 */
+/* ======================================================= */
 
 
 /* ======================================================= */
@@ -175,8 +198,8 @@
   max-height: 100%;
   object-fit: contain;
   transition: all 0.5s ease-in-out;
-  z-index: 1;
   position: absolute;
+  z-index: 1;
   bottom: 0; /* Position the image at the bottom */
   left: 0;
   right: 100px;
