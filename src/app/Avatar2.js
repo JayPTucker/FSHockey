@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
 import Avi2Pic from '../img/Section4/Avatar2Pic.png'; // Update the image path
 import AvatarVid2WebM from '../img/Section4/Avatar2-60.webm'; // Update the video path
+import goonSquadLogo from '../img/Section4/goonsquadlogo.png';
 
 class YourComponent2 extends Component {
   constructor(props) {
@@ -39,6 +40,7 @@ class YourComponent2 extends Component {
   render() {
     return (
       <Col md={2} className='section4'> {/* Update the class name to target .section4 */}
+        <img src={goonSquadLogo} className='goonSquadLogo' alt="goonSquadLogo"></img>
         <p className='avatarTitle'>Plaguey</p>
         <video
           ref={this.videoRef}
