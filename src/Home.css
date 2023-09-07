@@ -103,9 +103,27 @@
 /* SECTION 2 */
 /* ======================================================= */
 .fslogo {
-  max-width: 60%;
+  max-width: 50%;
   max-height: 100%;
   object-fit: contain;
+  margin-bottom: 10vh;
+}
+
+.s2btn {
+  max-width: 30vh;
+  font-size: 3vh;
+  margin-bottom: 15px;
+  background-color: rgba(196, 0, 0, 0.342);
+  color: white;
+  border: 1px solid black;
+  padding: 10px;
+  width: 25vh;
+  transition: all 0.5s ease-in-out;
+}
+
+.s2btn:hover {
+  background-color: rgba(255, 0, 0, 0.466);
+  border: 1px solid white;
 }
 
 /* ======================================================= */

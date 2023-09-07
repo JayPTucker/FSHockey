@@ -40,8 +40,11 @@ class YourComponent2 extends Component {
   render() {
     return (
       <Col md={2} className='section4'> {/* Update the class name to target .section4 */}
+
         <img src={goonSquadLogo} className='goonSquadLogo' alt="goonSquadLogo"></img>
+
         <p className='avatarTitle'>Plaguey</p>
+
         <video
           ref={this.videoRef}
           loop
@@ -54,7 +57,9 @@ class YourComponent2 extends Component {
           <source src={AvatarVid2WebM} type="video/webm" />
           {/* Add additional source elements for different video formats if needed */}
         </video>
+
         <img src={Avi2Pic} className='Avi2Pic' alt="BarryBoy"></img>
+        
       </Col>
     );
   }

@@ -43,9 +43,10 @@ class YourComponent extends Component {
     return (
       <Col md={2} className='section3'>
 
-
         <img src={barryLogo} className='barryLogo' alt="BarryLogo"></img>
+
         <p className='avatarTitle'>BarryBoy</p>
+
         <video
           ref={this.videoRef}
           loop
@@ -60,6 +61,7 @@ class YourComponent extends Component {
         </video>
 
         <img src={Avi1Pic} className='Avi1Pic' alt="BarryBoy"></img>
+
       </Col>
     );
   }
