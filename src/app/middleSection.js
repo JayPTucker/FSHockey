@@ -8,7 +8,9 @@ class YourComponent4 extends Component {
     render() {
         return (
 
-            <Col md={4} className='section2'>
+            <Col md={4} className='middleSection'>
+
+                <div className='middleSectionZindex'>
 
                 <a className="credits" href="https://jaypaultucker.org" rel="noopener noreferrer" target="_blank">
                     <img className="navbar-logo" alt="My logo" src={favicon}></img>
@@ -24,6 +26,7 @@ class YourComponent4 extends Component {
                 <button className="s2btn">Commissions</button>
                 <br></br>
                 <button className="s2btn">Contact Me</button>
+                </div>
 
             </Col>
 
