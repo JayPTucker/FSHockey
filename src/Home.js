@@ -3,23 +3,22 @@ import React from 'react';
 import './Home.css';
 import { Row, Container } from 'react-bootstrap';
 
-import Section1 from './app/Section1';
-import Section2 from './app/Section2';
+import MiddleSection from './app/middleSection.js';
 import Avatar1 from './app/Avatar1.js'; // Import Avatar1
 import Avatar2 from './app/Avatar2.js';
+import Avatar3 from './app/Avatar3.js';
+import Avatar4 from './app/Avatar4.js';
 
 function App() {
   return (
     <Container fluid>
       <Row className="mainRow">
 
-        {/* <Section1 /> */}
-
         <Avatar1 /> 
 
         <Avatar2 />
 
-        <Section2 />
+        <MiddleSection />
 
         {/* Render Avatar1 within App */}
         <Avatar1 /> 

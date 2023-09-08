@@ -8,7 +8,7 @@
   font-family: 'Russo One', sans-serif;
 }
 
-.section1, .section2, .section3, .section4 {
+.section1, .section2, .avatar1, .avatar2 {
   /* Gets rid of edges in columns */
   padding: 0px !important;
   transition: all 0.3s ease-in-out;
@@ -16,18 +16,14 @@
   box-shadow: 0px 0px 25px black;
   border: 1px solid black;
 }
-
-.section1 {
-  background: linear-gradient(to bottom, #8d0000d5, rgba(0, 0, 0, 0.856)); /* Create a vertical gradient from red to black */
-}
 /* YourComponent.css */ 
 
 .section2 {
-  background-color: rgba(0, 0, 0, 0.856);
+  background-color: linear-gradient(to bottom, #8d0000d5, rgba(0, 0, 0, 0.856));
 }
 
 /* Scale the section on hover */
-.section1:hover, .section2:hover, .section3:hover, .section4:hover {
+.section1:hover, .section2:hover, .avatar1:hover, .avatar2:hover {
   z-index: 2; /* Bring the hovered section to the front */
   border: 1px solid rgba(255, 255, 255, 0.867);
   box-shadow: 0px 0px 60px black;
@@ -167,7 +163,7 @@
   z-index: -2;
 }
 
-.section3:hover .avatarTitle, .section4:hover .avatarTitle {
+.avatar1:hover .avatarTitle, .avatar2:hover .avatarTitle {
   margin-top: 9vh;
   font-size: 40px;
   opacity: 50%;
@@ -178,23 +174,23 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Container Gradients and effects behind them */
-.section3 {
+.avatar1 {
   background: linear-gradient(to bottom, #2b3fbddc, rgba(0, 0, 0, 0.856)); /* Create a vertical gradient from red to black */
 }
 
-.section3::before {
+.avatar1::before {
   background: linear-gradient(to bottom, #2b3fbd91, #ffe5db81); /* Create a vertical gradient from red to black */
 }
 
-.section4 {
+.avatar2 {
   background: linear-gradient(to bottom, #ff741dd5, rgba(0, 0, 0, 0.856)); /* Create a vertical gradient from red to black */
 }
 
-.section4::before {
+.avatar2::before {
   background: linear-gradient(to bottom, #ff741d80, #ffc39e8c); /* Create a vertical gradient from red to black */
 }
 
-.section3, .section4 {
+.avatar1, .avatar2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,7 +200,7 @@
 }
 
 /* Create a pseudo-element for the gradient background */
-.section3::before, .section4::before {
+.avatar1::before, .avatar2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -215,7 +211,7 @@
   transition: opacity 0.5s ease-in-out; /* Transition the opacity property */
 }
 
-.section3:hover::before, .section4:hover::before {
+.avatar1:hover::before, .avatar2:hover::before {
   opacity: 1; /* Set opacity to 1 on hover */
 }
 
@@ -241,7 +237,7 @@
   transform: scale(3.4);
 }
 
-.section3:hover .AvatarVid1, .section4:hover .AvatarVid2 {
+.avatar1:hover .AvatarVid1, .avatar2:hover .AvatarVid2 {
   opacity: 100%;
   filter: grayscale(0%);
   transform: scale(3.9);
@@ -276,7 +272,7 @@
 }
 
 /* When section 4 is hovered over, do this to Avi1Pic: */
-.section3:hover .Avi1Pic, .section4:hover .Avi2Pic {
+.avatar1:hover .Avi1Pic, .avatar2:hover .Avi2Pic {
   opacity: 25%;
   z-index: 0 !important;
   transform: scale(2.2);

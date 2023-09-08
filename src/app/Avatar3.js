@@ -14,15 +14,15 @@ class YourComponent extends Component {
 
   componentDidMount() {
     // Add event listeners to control video playback
-    this.avatar1 = document.querySelector('.avatar1'); // Replace with a more specific selector if needed
-    this.avatar1.addEventListener('mouseenter', this.playVideo);
-    this.avatar1.addEventListener('mouseleave', this.resetVideo);
+    this.avatar3 = document.querySelector('.avatar3'); // Replace with a more specific selector if needed
+    this.avatar3.addEventListener('mouseenter', this.playVideo);
+    this.avatar3.addEventListener('mouseleave', this.resetVideo);
   }
 
   componentWillUnmount() {
     // Remove event listeners when the component unmounts
-    this.avatar1.removeEventListener('mouseenter', this.playVideo);
-    this.avatar1.removeEventListener('mouseleave', this.resetVideo);
+    this.avatar3.removeEventListener('mouseenter', this.playVideo);
+    this.avatar3.removeEventListener('mouseleave', this.resetVideo);
   }
 
   playVideo = () => {
@@ -41,7 +41,7 @@ class YourComponent extends Component {
 
   render() {
     return (
-      <Col md={2} className='avatar1'>
+      <Col md={2} className='avatar3'>
 
         <img src={barryLogo} className='barryLogo' alt="BarryLogo"></img>
 

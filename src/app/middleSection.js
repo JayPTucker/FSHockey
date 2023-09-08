@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
+import favicon from "../img/Section1/favicon.ico"
 
 import fslogo from '../img/Section1/FSLOGO.png';
 
@@ -8,6 +9,12 @@ class YourComponent4 extends Component {
         return (
 
             <Col md={4} className='section2'>
+
+                <a className="credits" href="https://jaypaultucker.org" rel="noopener noreferrer" target="_blank">
+                    <img className="navbar-logo" alt="My logo" src={favicon}></img>
+                    <p>Copyright © Jay Paul Tucker 2023</p>
+                </a>
+
                 <img className="fslogo" src={fslogo} alt="fslogo"></img>
 
                 <br></br>

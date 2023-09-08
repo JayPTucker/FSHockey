@@ -12,15 +12,15 @@ class YourComponent2 extends Component {
 
   componentDidMount() {
     // Add event listeners to control video playback
-    this.avatar2 = document.querySelector('.avatar2'); // Update the selector to target .avatar2
-    this.avatar2.addEventListener('mouseenter', this.playVideo);
-    this.avatar2.addEventListener('mouseleave', this.resetVideo);
+    this.avatar4 = document.querySelector('.avatar4'); // Update the selector to target .avatar4
+    this.avatar4.addEventListener('mouseenter', this.playVideo);
+    this.avatar4.addEventListener('mouseleave', this.resetVideo);
   }
 
   componentWillUnmount() {
     // Remove event listeners when the component unmounts
-    this.avatar2.removeEventListener('mouseenter', this.playVideo);
-    this.avatar2.removeEventListener('mouseleave', this.resetVideo);
+    this.avatar4.removeEventListener('mouseenter', this.playVideo);
+    this.avatar4.removeEventListener('mouseleave', this.resetVideo);
   }
 
   playVideo = () => {
@@ -39,7 +39,7 @@ class YourComponent2 extends Component {
 
   render() {
     return (
-      <Col md={2} className='avatar2'> {/* Update the class name to target .avatar2 */}
+      <Col md={2} className='avatar4'> {/* Update the class name to target .section4 */}
 
         <img src={goonSquadLogo} className='goonSquadLogo' alt="goonSquadLogo"></img>
 
