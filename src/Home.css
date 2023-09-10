@@ -106,7 +106,7 @@
   opacity: 50%;
   position: fixed;
   margin-top: 3vh;
-  width: 25vh;
+  width: 17vh;
   z-index: -2;
 }
 
@@ -114,11 +114,11 @@
   opacity: 70%;
   position: fixed;
   margin-top: 2vh;
-  width: 30vh;
+  width: 18vh;
   z-index: -2;
 }
 
-.avatar1:hover .avatarTitle, .avatar2:hover .avatarTitle {
+.avatar1:hover .avatarTitle, .avatar2:hover .avatarTitle, .avatar3:hover .avatarTitle, .avatar4:hover .avatarTitle {
   margin-top: 9vh;
   font-size: 40px;
   opacity: 50%;
