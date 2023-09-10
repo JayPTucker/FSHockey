@@ -19,9 +19,13 @@ class YourComponent4 extends Component {
         const { activeButton } = this.state;
 
         if (activeButton === 'About') {
-            return <p className="btnContent">About content here</p>;
+            return <p className="btnContent">
+                About content here
+                </p>;
         } else if (activeButton === 'Commissions') {
-            return <p className="btnContent">Commissions content here</p>;
+            return <p className="btnContent">
+                Commissions content here
+                </p>;
         } else if (activeButton === 'Contact') {
             return <p className="btnContent">
                 Discord: fshockey <br></br>
