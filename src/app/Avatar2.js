@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import Avi2Pic from '../img/Section4/Avatar2Pic.png'; // Update the image path
-import AvatarVid2WebM from '../img/Section4/Avatar2-60.webm'; // Update the video path
-import goonSquadLogo from '../img/Section4/goonsquadlogo.png';
+import Avi2Pic from '../img/Avatar2/Avatar2Pic.png'; // Update the image path
+import AvatarVid2WebM from '../img/Avatar2/Avatar2-60.webm'; // Update the video path
+import goonSquadLogo from '../img/Avatar2/goonsquadlogo.png';
 
 class YourComponent2 extends Component {
   constructor(props) {

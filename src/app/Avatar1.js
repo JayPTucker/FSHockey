@@ -1,10 +1,10 @@
 // YourComponent.js
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import Avi1Pic from '../img/Section3/FSH_avi_1.png';
-import AvatarVid1WebM from '../img/Section3/avatar1-60.webm';
+import Avi1Pic from '../img/Avatar1/avatar1.png';
+import AvatarVid1WebM from '../img/Avatar1/avatar1.webm';
 
-import barryLogo from "../img/Section1/favicon.ico"
+import barryLogo from "../img/MiddleSection/favicon.ico"
 
 class YourComponent extends Component {
   constructor(props) {

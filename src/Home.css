@@ -192,7 +192,15 @@
   background: linear-gradient(to bottom, #ff741d80, #ffc39e8c); /* Create a vertical gradient from red to black */
 }
 
-.avatar1, .avatar2, .middleSection {
+.avatar3 {
+  background: linear-gradient(to bottom, #eaa279, rgba(0, 0, 0, 0.856)); /* Create a vertical gradient from red to black */
+}
+
+.avatar3::before {
+  background: linear-gradient(to bottom, #a06543, rgba(196, 196, 196, 0.856)); /* Create a vertical gradient from red to black */
+}
+
+.avatar1, .avatar2, .middleSection, .avatar3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,7 +214,7 @@
 }
 
 /* Create a pseudo-element for the gradient background */
-.avatar1::before, .avatar2::before, .middleSection::before {
+.avatar1::before, .avatar2::before, .middleSection::before, .avatar3::before {
   content: "";
   position: absolute;
   top: 0;
@@ -217,7 +225,7 @@
   transition: opacity 0.5s ease-in-out; /* Transition the opacity property */
 }
 
-.avatar1:hover::before, .avatar2:hover::before, .middleSection:hover::before {
+.avatar1:hover::before, .avatar2:hover::before, .middleSection:hover::before, .avatar3:hover::before{
   opacity: 1; /* Set opacity to 1 on hover */
 }
 
@@ -226,7 +234,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Style the video */
-.AvatarVid1, .AvatarVid2 {
+.AvatarVid1, .AvatarVid2, .AvatarVid3 {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -243,7 +251,7 @@
   transform: scale(3.4);
 }
 
-.avatar1:hover .AvatarVid1, .avatar2:hover .AvatarVid2 {
+.avatar1:hover .AvatarVid1, .avatar2:hover .AvatarVid2, .avatar3:hover .AvatarVid3 {
   opacity: 100%;
   filter: grayscale(0%);
   transform: scale(3.9);
@@ -255,7 +263,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Style the image */
-.Avi1Pic, .Avi2Pic {
+.Avi1Pic, .Avi2Pic, .Avi3Pic {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -269,7 +277,7 @@
   filter: grayscale(0%);
 }
 
-.Avi1Pic {
+.Avi1Pic, .Avi3Pic {
   transform: scale(1.2);
 }
 
@@ -278,7 +286,7 @@
 }
 
 /* When section 4 is hovered over, do this to Avi1Pic: */
-.avatar1:hover .Avi1Pic, .avatar2:hover .Avi2Pic {
+.avatar1:hover .Avi1Pic, .avatar2:hover .Avi2Pic, .avatar3:hover .Avi3Pic {
   opacity: 25%;
   z-index: 0 !important;
   transform: scale(2.2);

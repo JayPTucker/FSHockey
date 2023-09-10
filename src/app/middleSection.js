@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import favicon from "../img/Section1/favicon.ico"
+import favicon from "../img/MiddleSection/favicon.ico";
 
-import fslogo from '../img/Section1/FSLOGO.png';
+import fslogo from '../img/MiddleSection/FSLOGO.png';
 
 class YourComponent4 extends Component {
     render() {

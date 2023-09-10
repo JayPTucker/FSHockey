@@ -1,10 +1,8 @@
 // YourComponent.js
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import Avi1Pic from '../img/Section3/FSH_avi_1.png';
-import AvatarVid1WebM from '../img/Section3/avatar1-60.webm';
-
-import barryLogo from "../img/Section1/favicon.ico"
+import Avi3Pic from '../img/Avatar3/avatar3.png';
+import AvatarVid3WebM from '../img/Avatar3/avatar3.webm';
 
 class YourComponent extends Component {
   constructor(props) {
@@ -43,24 +41,22 @@ class YourComponent extends Component {
     return (
       <Col md={2} className='avatar3'>
 
-        <img src={barryLogo} className='barryLogo' alt="BarryLogo"></img>
-
-        <p className='avatarTitle'>BarryBoy</p>
+        <p className='avatarTitle'>Unknown</p>
 
         <video
           ref={this.videoRef}
           loop
           muted
-          className="AvatarVid1"
+          className="AvatarVid3"
           alt="Avatar 1 Vid"
           controls={false} // Disable the controls
           disablePictureInPicture // Disable the PiP button
         >
-          <source src={AvatarVid1WebM} type="video/webm" />
+          <source src={AvatarVid3WebM} type="video/webm" />
           {/* Add additional source elements for different video formats if needed */}
         </video>
 
-        <img src={Avi1Pic} className='Avi1Pic' alt="BarryBoy"></img>
+        <img src={Avi3Pic} className='Avi3Pic' alt="BarryBoy"></img>
 
       </Col>
     );

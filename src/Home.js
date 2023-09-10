@@ -21,7 +21,7 @@ function App() {
         <MiddleSection />
 
         {/* Render Avatar1 within App */}
-        <Avatar1 /> 
+        <Avatar3 /> 
 
         {/* Render Avatar1 within App */}
         <Avatar2 />
