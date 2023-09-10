@@ -33,36 +33,6 @@
   box-shadow: 0px 0px 60px black;
 }
 
-/* ========================================================== */
-
-/* YourComponent.css */
-.credits {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex; /* Use flexbox to arrange the elements */
-  align-items: center; /* Vertically center the content */
-  background-color: rgba(0, 0, 0, 0.233);
-  color: white;
-  padding: 2px;
-  font-size: 10px;
-  border: 1px solid #00000034;
-}
-
-/* Style the logo image */
-.navbar-logo {
-  width: 30px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Add some spacing between the image and text */
-  border-radius: 100px;
-  border: 1px solid #00000079;
-}
-
-/* Style the text */
-.credits p {
-  margin: 0; /* Remove default margin to prevent extra spacing */
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ======================================================= */
@@ -286,4 +256,38 @@
   z-index: 0 !important;
   transform: scale(2.2);
   filter: grayscale(100%);
+}
+
+/* ========================================================== */
+
+/* YourComponent.css */
+.credits {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  align-items: center; /* Vertically center the content */
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.233);
+  color: white;
+  padding: 2px;
+  font-size: 10px;
+  border: 1px solid #00000034;
+  transition: all 0.3s ease-in-out;
+}
+
+.credits:hover {
+  transform: scale(1.9);
+}
+
+/* Style the logo image */
+.navbar-logo {
+  width: 30px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #00000079;
+}
+
+/* Style the text */
+.credits p {
+  margin: 0; /* Remove default margin to prevent extra spacing */
 }

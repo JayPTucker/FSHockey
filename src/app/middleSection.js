@@ -40,9 +40,10 @@ class YourComponent4 extends Component {
         return (
             <Col md={4} className='middleSection'>
                 <div className='middleSectionZindex'>
+
                     <a className="credits" href="https://jaypaultucker.org" rel="noopener noreferrer" target="_blank">
                         <img className="navbar-logo" alt="My logo" src={favicon}></img>
-                        <p>Copyright © Jay Paul Tucker 2023</p>
+                        Copyright © Jay Paul Tucker 2023
                     </a>
 
                     <img className="fslogo" src={fslogo} alt="fslogo"></img>

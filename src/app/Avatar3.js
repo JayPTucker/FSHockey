@@ -42,7 +42,7 @@ class YourComponent3 extends Component {
       <Col md={2} className='avatar3'>
 
         <p className='avatarTitle'>Valkyrie</p>
-        <p className='avatarMk'>Mark 1</p>
+        <p className='avatarMk'>MK. I</p>
 
         <video
           ref={this.videoRef}

@@ -45,7 +45,7 @@ class YourComponent4 extends Component {
         <img src={goonSquadLogo} className='goonSquadLogo' alt="goonSquadLogo"></img>
 
         <p className='avatarTitle'>Yoda</p>
-        <p className='avatarMk'>Mark 1</p>
+        <p className='avatarMk'>MK. I</p>
 
         <video
           ref={this.videoRef}
