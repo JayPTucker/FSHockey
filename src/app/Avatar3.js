@@ -41,7 +41,8 @@ class YourComponent3 extends Component {
     return (
       <Col md={2} className='avatar3'>
 
-        <p className='avatarTitle'>Unknown</p>
+        <p className='avatarTitle'>Valkyrie</p>
+        <p className='avatarMk'>Mark 1</p>
 
         <video
           ref={this.videoRef}
