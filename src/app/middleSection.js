@@ -12,20 +12,22 @@ class YourComponent4 extends Component {
 
                 <div className='middleSectionZindex'>
 
-                <a className="credits" href="https://jaypaultucker.org" rel="noopener noreferrer" target="_blank">
-                    <img className="navbar-logo" alt="My logo" src={favicon}></img>
-                    <p>Copyright © Jay Paul Tucker 2023</p>
-                </a>
+                    <a className="credits" href="https://jaypaultucker.org" rel="noopener noreferrer" target="_blank">
+                        <img className="navbar-logo" alt="My logo" src={favicon}></img>
+                        <p>Copyright © Jay Paul Tucker 2023</p>
+                    </a>
+                    
 
-                <img className="fslogo" src={fslogo} alt="fslogo"></img>
+                    <img className="fslogo" src={fslogo} alt="fslogo"></img>
 
-                <br></br>
 
-                <button className="s2btn">About</button>
-                <br></br>
-                <button className="s2btn">Commissions</button>
-                <br></br>
-                <button className="s2btn">Contact Me</button>
+                    <br></br>
+
+                    <button className="middlebtn">About</button>
+                    <br></br>
+                    <button className="middlebtn">Commissions</button>
+                    <br></br>
+                    <button className="middlebtn">Contact Me</button>
                 </div>
 
             </Col>

@@ -8,7 +8,7 @@
   font-family: 'Russo One', sans-serif;
 }
 
-.middleSection, .avatar1, .avatar2 {
+.middleSection, .avatar1, .avatar2, .avatar3, .avatar4 {
   /* Gets rid of edges in columns */
   padding: 0px !important;
   transition: all 0.3s ease-in-out;
@@ -23,11 +23,11 @@
 }
 
 .middleSection::before {
-  background: linear-gradient(to bottom, #b70000bc, rgba(0, 0, 0, 0.87)); /* Create a vertical gradient from red to black */
+  background: linear-gradient(to bottom, #b700006e, rgba(0, 0, 0, 0.562)); /* Create a vertical gradient from red to black */
 }
 
 /* Scale the section on hover */
-.middleSection:hover, .avatar1:hover, .avatar2:hover {
+.middleSection:hover, .avatar1:hover, .avatar2:hover, .avatar3:hover, .avatar4:hover {
   z-index: 2; /* Bring the hovered section to the front */
   border: 1px solid rgba(255, 255, 255, 0.867);
   box-shadow: 0px 0px 60px black;
@@ -66,65 +66,33 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ======================================================= */
-/* SECTION 1 */
-/* ======================================================= */
-
-.pageTitle {
-  font-size: 70px;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.856);
-  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.918);
-  z-index: 2;
-  transition: all 0.2s ease-in-out;
-}
-
-.fstitlelogo {
-  opacity: 70%;
-  margin-top: 1vh;
-  width: 22vh;
-  z-index: -2;
-}
-
-/* YourComponent.css */
-
-.headerPic {
-  max-width: 90%;
-  max-height: 100%;
-  transition: all 0.5s ease-in-out;
-  z-index: 1;
-  position: fixed;
-  bottom: 0; /* Position the image at the bottom */
-  left: 0;
-  right: 0;
-  filter: grayscale(0%);
-}
-
-/* ======================================================= */
 /* SECTION 2 */
 /* ======================================================= */
-
 .fslogo {
-  max-width: 50%;
+  max-width: 55%;
   max-height: 100%;
   object-fit: contain;
+  margin-top: 5vh;
   margin-bottom: 10vh;
+  -webkit-filter: drop-shadow(0px 0px 20px #000000);
+  filter: drop-shadow(0px 0px 20px #000000);
 }
 
-.s2btn {
-  max-width: 30vh;
+.middlebtn {
   font-size: 3vh;
-  margin-bottom: 15px;
-  background-color: rgba(196, 0, 0, 0.342);
+  margin-bottom: 35px;
+  background-color: rgba(197, 50, 50, 0.575);
   color: white;
   border: 1px solid black;
   padding: 10px;
   width: 25vh;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.s2btn:hover {
-  background-color: rgba(255, 0, 0, 0.466);
+.middlebtn:hover {
+  background-color: rgba(46, 3, 3, 0.575);
   border: 1px solid white;
+  width: 32vh;
 }
 
 /* ======================================================= */
@@ -257,6 +225,8 @@
   margin: auto;
   z-index: 0;
   transform: scale(3.4);
+  -webkit-filter: drop-shadow(0px 0px 20px #000000);
+  filter: drop-shadow(0px 0px 20px #000000);
 }
 
 .avatar1:hover .AvatarVid1, .avatar2:hover .AvatarVid2, .avatar3:hover .AvatarVid3, .avatar4:hover .AvatarVid4 {
@@ -283,6 +253,8 @@
   right: 100px;
   margin: auto;
   filter: grayscale(0%);
+  -webkit-filter: drop-shadow(0px 0px 10px #000000);
+  filter: drop-shadow(0px 0px 10px #000000);
 }
 
 .Avi1Pic, .Avi3Pic, .Avi4Pic {
