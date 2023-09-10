@@ -4,7 +4,7 @@ import { Col } from 'react-bootstrap';
 import Avi3Pic from '../img/Avatar3/avatar3.png';
 import AvatarVid3WebM from '../img/Avatar3/avatar3.webm';
 
-class YourComponent extends Component {
+class YourComponent3 extends Component {
   constructor(props) {
     super(props);
     this.videoRef = React.createRef();
@@ -48,7 +48,7 @@ class YourComponent extends Component {
           loop
           muted
           className="AvatarVid3"
-          alt="Avatar 1 Vid"
+          alt="Avatar3Vid"
           controls={false} // Disable the controls
           disablePictureInPicture // Disable the PiP button
         >
@@ -63,4 +63,4 @@ class YourComponent extends Component {
   }
 }
 
-export default YourComponent;
+export default YourComponent3;

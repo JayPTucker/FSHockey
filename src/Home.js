@@ -24,7 +24,7 @@ function App() {
         <Avatar3 /> 
 
         {/* Render Avatar1 within App */}
-        <Avatar2 />
+        <Avatar4 />
 
       </Row>
     </Container>
